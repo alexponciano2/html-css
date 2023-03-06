@@ -1,0 +1,278 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    /* proporção 16:9 */
+}
+
+.video-wrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 94%;
+    height: 98%;
+    
+}
+
+.my-iframe {
+    border-color: green;
+    border-top-width: 20px;
+    border-right-width: 30px;
+    border-bottom-width: 20px;
+    border-left-width: 30px;
+
+}
+
+.imagem-responsiva {
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+}
+
+.bugdroidhumano {
+    max-width: 30%;
+    height: auto;
+    width: 100%;
+    margin-left: 30%
+}
+
+.img-responsive {
+    padding-left: 20px;
+    max-width: 96%;
+    height: auto;
+    width: 100%;
+}
+
+
+li::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url('imagens/check-symbol.png') no-repeat;
+    margin-right: 6px;
+    vertical-align: middle;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 5px 0;
+    padding-left: 26px;
+    position: relative;
+    line-height: 1.5;
+}
+
+header {
+    background-image: linear-gradient(to top, rgb(44, 65, 44), rgb(138, 255, 138));
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 0px;
+
+
+}
+
+body {
+    background-color: #EBE5C5;
+
+}
+
+#corpo {
+    padding-top: 10px;
+    margin: auto;
+    background-color: white;
+    max-width: 100%;
+    height: auto;
+    width: 1000px;
+    box-shadow: 0px 0px 10px black;
+}
+
+header>h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+main>h1 {
+    display: block;
+    font-size: 2em;
+    margin-block-start: -16px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    font-family: 'idroid';
+    text-align: center;
+    padding-top: 10px;
+    color: green;
+
+}
+
+main>h2 {
+    font-family: 'idroid';
+    color: green;
+    margin-left: 10px;
+    background-color: rgb(225, 255, 225);
+    padding-left: 5px;
+}
+
+header>p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
+header>h2 {
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px black;
+
+
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+
+
+a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+    padding: 4px;
+    font-style: bolder;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+a.android {
+    color: green;
+    padding-left: 4px;
+    margin-right: 0px;
+    background-color: #4dff9a7e;
+}
+
+.history{
+    color: #1A5C37;
+    font-weight: 700;
+    padding-left: 2px;
+    margin-right: 5px;
+}
+
+#entao{
+    padding-top: 5px;
+    text-align: center;
+    margin-top: 5px;
+    font-size: 105%;
+}
+.androidq {
+    color: green;
+    font-weight: 800;
+}
+
+a.androidq {
+    font-weight: bolder;
+    color: green;
+    padding-left: 4px;
+    margin-right: 0px;
+}
+
+a.google {
+    color: green;
+    padding-left: 4px;
+    margin-right: 0px;
+}
+
+.home:hover{
+    background-color: #8fdd549f;
+    text-decoration: none;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+nav {
+    padding-bottom: 5px;
+}
+
+main {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    width: 100%;
+    
+
+}
+
+p {
+    margin-left: 10px;
+}
+
+strong {
+    color: green;
+}
+
+.conteiner {
+    background-color: white;
+    max-width: 1000px;
+    margin: auto;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    box-shadow: 0px 0px 12px 0px black;
+}
+
+#aprender {
+    background-color: #1A5C37;
+    border-radius: 12px;
+    margin: 20px;
+    padding-top: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#aprender > p{
+    color: white;
+    margin-top: 1px;
+    padding-bottom: 00px;    
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#assunto {
+    background-color: #83E1AD;
+    
+}
+
+div > p{
+    padding-top: 10px;
+}
+
+footer{
+    padding-top: 0px;
+    padding-bottom: 0px;
+    background-color: darkgreen;
+    text-align: center;
+    margin: 0px 0px 0px 0px;
+    color: white;
+}
