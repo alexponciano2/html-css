@@ -1,91 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Desafio 14</title>
     <style>
-        body{
+        body {
             font-family: Arial, Helvetica, sans-serif;
             font-weight: normal;
         }
 
 
 
-        table{
+        table {
             border-collapse: collapse;
             margin: auto;
         }
 
-        td{
+        td,
+        th {
             border: 1px solid black;
             padding: 5px 10px 5px 5px;
         }
 
-        .bolder{
+        .bolder {
             font-weight: bolder;
             text-align: center;
         }
 
-        h1{
+        h1 {
             text-align: center;
         }
 
+        caption {
+            text-align: center;
+        }
+
+        caption {
+            font-size: 1.5em;
+            font-weight: bolder;
+            padding-bottom: 10px;
+        }
+
+        .total{
+            font-weight: bolder;
+            text-align: center;
+        }
     </style>
 </head>
+
 <body>
     <h1>Resolvendo desafio 14 sobre tabelas</h1>
     <table>
-        <tr>
-            <td class="bolder">Grupo</td>
-            <td class="bolder">Nomes</td>
-            <td class="bolder" colspan="3">Filmes</td>
-        </tr>
+        <thead>
+            <caption>Filmes Favoritos</caption>
+            <tr>
+                <th scope="col" class="bolder">Grupo</th>
+                <th scope="col" class="bolder">Nomes</th>
+                <th scope="colgroup" class="bolder" colspan="3">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" class="bolder" rowspan="3">Mulheres</th>
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
 
-        <tr>
-            <td class="bolder" rowspan="3">Mulheres</td>
-            <td>Ana Maria Santos</td>
-            <td>Alien</td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
-        </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
 
-        <tr>
-            <td>Beatriz Souza</td>
-            <td>Hulk</td>
-            <td>Inception</td>
-            <td>Batman</td>
-        </tr>
+            <tr>
+                <td>Cláudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
 
-        <tr>
-            <td>Cláudia Melo</td>
-            <td>Oblivion</td>
-            <td>Matrix</td>
-            <td>Big Hero</td>
-        </tr>
+            <tr>
+                <th scope="rowgroup" class="bolder" rowspan="3">Homens</th>
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
 
-        <tr>
-            <td class="bolder" rowspan="3">Homens</td>
-            <td>Bruno Mendonça</td>
-            <td>Intocáveis</td>
-            <td>Amnésia</td>
-            <td>Gladiador</td>
-        </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
 
-        <tr>
-            <td>Daniel Lourenço</td>
-            <td>Wall-E</td>
-            <td>Oldboy</td>
-            <td>Dangal</td>
-        </tr>
-
-        <tr>
-            <td>Fabiano Mota</td>
-            <td>Star Wars 5</td>
-            <td>Taxi Driver</td>
-            <td>Toy Story</td>
-        </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row" class="total" colspan="4">Total</th>
+                <td>1000</td>
+            </tr>
+        </tfoot>
     </table>
 </body>
+
 </html>
