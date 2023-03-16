@@ -9,9 +9,7 @@
 </head>
 
 <body>
-    <h1>Formulários</h1>
-
-    <form action="cadastro.js" method="get" autocomplete="on">
+    <form action="cadastro.js" method="POST" autocomplete="on">
         <fieldset>
             <legend>Dados Pessoais</legend>
             <p>
@@ -29,8 +27,6 @@
             </p>
         </fieldset>
     </form>
-    <br>
-    <br>
     <form action="cadastro.js" method="get" autocomplete="on">
         <fieldset>
             <legend>Esportes Favoritos</legend>
@@ -42,19 +38,35 @@
             </p>
         </fieldset>
     </form>
-    <br>
-    <br>
     <form action="cadastro.js" method="get" autocomplete="on">
         <fieldset>
             <legend>Tipo de filme Favorito</legend>
-            
-                <p>
-                    <input type="radio" name="acao" id="racao"> <label for="racao">Ação</label> <br>
-                    <input type="radio" name="acao" id="rcom"> <label for="rcom">Comédia</label> <br>
-                    <input type="radio" name="acao" id="rter"> <label for="rter">Terror</label> <br>
-                    <input type="radio" name="acao" id="rrom"> <label for="rrom">Romance</label> <br>
-                </p>
-                       
+
+            <p>
+                <input type="radio" name="acao" id="racao"> <label for="racao">Ação</label> <br>
+                <input type="radio" name="acao" id="rcom"> <label for="rcom">Comédia</label> <br>
+                <input type="radio" name="acao" id="rter"> <label for="rter">Terror</label> <br>
+                <input type="radio" name="acao" id="rrom"> <label for="rrom">Romance</label> <br>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Cor e Nivel de Satisfação</legend>
+            <p>
+                <label for="icor">Cor</label>
+                <input type="color" name="cor" id="icor" value="#00ff00">
+            </p>
+
+            <p>
+                <label for="inivel">Nível de Satisfação</label>
+                <input type="range" name="nivel" id="inivel" min="1" max="5" value="2">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Cor e Nivel de Satisfação</legend>
+            <p>
+                <label for="icor">Foto de Perfil</label>
+                <input type="file" name="file" id="ifile">
+            </p>
         </fieldset>
         <br>
         <input type="submit" value="Enviar">
